@@ -3,7 +3,7 @@ import pandas as pd
 class Numerical:
     def converted(self,column,value):
         df_train = pd.read_csv('numeric_data.csv')
-        cat_data = pd.read_csv(r'loan data\loan_train.csv')
+        cat_data = pd.read_csv('loan_train.csv')
         num = df_train.loc[cat_data[cat_data[column]==value].index[0]][column]
         return num
 
